@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="150dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Surname"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edName"
+            app:layout_constraintStart_toStartOf="@+id/edName"
+            app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+        <EditText
+            android:id="@+id/edPatronymic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Patronymic"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edSurname"
+            app:layout_constraintStart_toStartOf="@+id/edSurname"
+            app:layout_constraintTop_toBottomOf="@+id/edSurname" />
+
+        <TextView
+            android:id="@+id/dateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:text="2000-01-01 00:00:00"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/edPatronymic"
+            app:layout_constraintStart_toStartOf="@+id/edPatronymic"
+            app:layout_constraintTop_toBottomOf="@+id/edPatronymic"
+            />
+
+        <Button
+            android:id="@+id/dtnSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:text="pick a date"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/dateOfBirth"
+            app:layout_constraintStart_toStartOf="@+id/dateOfBirth"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirth"
+            />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/dtnSelectedDate"
+            app:layout_constraintStart_toStartOf="@+id/dtnSelectedDate"
+            app:layout_constraintTop_toBottomOf="@+id/dtnSelectedDate"
+            />
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edEmail"
+            app:layout_constraintStart_toStartOf="@+id/edEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+        <EditText
+            android:id="@+id/edUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Отправить"
+            app:layout_constraintEnd_toEndOf="@+id/edUsername"
+            app:layout_constraintStart_toStartOf="@+id/edUsername"
+            app:layout_constraintTop_toBottomOf="@+id/edUsername" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
