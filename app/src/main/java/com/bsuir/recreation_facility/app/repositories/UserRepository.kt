@@ -6,15 +6,15 @@ import com.bsuir.recreation_facility.sources.exceptions.InvalidCredentialsExcept
 import com.bsuir.recreation_facility.sources.model.user.UserSource
 import retrofit2.Response
 
-typealias UserListener = (message: String) -> Unit
+typealias MessListener = (message: String) -> Unit
 
 class UserRepository(
     private val userSource: UserSource
 ) {
 
-    suspend fun addUser(user: User): Response<User> {
+    suspend fun registration(user: User): Response<User> {
         val res: Response<User> = try {
-            userSource.addUser(user)
+            userSource.registration(user)
         } catch (e: Exception) {
             if (e is BackendException && e.code == 401) {
                 // map 401 error for sign-in to InvalidCredentialsException
@@ -25,5 +25,6 @@ class UserRepository(
         }
         return res
     }
+
 
 }

@@ -2,4 +2,46 @@
     <string name="app_name">Recreation_Facility</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="move_up">Move up</string>
+    <string name="move_down">Move down</string>
+    <string name="remove">Remove</string>
+    <string name="delete">Удалить</string>
+    <string name="entrant_has_been_deleted">Entrant has been deleted</string>
+    <string name="entrant_has_been_enroll">Entrant has been enroll</string>
+
+    <string name="register">Зарегистрирован</string>
+    <string name="free">Свободный</string>
+    <string name="id_register">Зарегистрировать</string>
+    <string name="add_department">Добавить (отдел)</string>
+    <string name="delete_department">Удалить (отдел)</string>
+    <string name="add_job_title">Названчить (должность)</string>
+    <string name="delete_job_title">Удалить (должность)</string>
+    <string name="id_leader">Лидер</string>
+
+    <string name="do_not_register">Не зарегистрирован</string>
+    <string name="failed_to_load_users">Failed to load users</string>
+    <string name="try_again">Try again</string>
+    <string name="position_true">Повысить</string>
+    <string name="position_false">Понизить</string>
+    <string name="department_take">Взять</string>
+    <string name="department">Отдел</string>
+    <string name="job_title">Назначить</string>
+    <string name="stimulation">Стимулировать</string>
+    <string name="emotions">Эмоции</string>
+    <string name="laugh">Смех</string>
+    <string name="good">Добро</string>
+    <string name="surprise">Удивление</string>
+    <string name="sad">Грусть</string>
+    <string name="anger">Злость</string>
+    <string name="fear">Страх</string>
+    <string name="disgust">Отвращение</string>
+    <string name="add_friend">Добавть в друзья</string>
+    <string name="write_message">Написать сообщение</string>
+    <string name="find">Найти</string>
+    <string name="filter">Фильтер</string>
+    <string name="write">Написать</string>
+    <string name="friend">В друзья</string>
+    <string name="correspondence">Переписка</string>
+    <string name="show_friend">Друзья</string>
+    <string name="delete_friend">Удалить друга</string>
 </resources>

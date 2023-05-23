@@ -46,3 +46,5 @@ internal inline fun <T> wrapBackendExceptions(block: () -> T): T {
         }
     }
 }
+
+class EntrantNotFoundException : Exception()

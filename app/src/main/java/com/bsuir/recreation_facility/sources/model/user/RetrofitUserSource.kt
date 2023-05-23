@@ -12,8 +12,9 @@ class RetrofitUserSource(
 
     private val userApi = retrofit.create(UserApi::class.java)
 
-    override suspend fun addUser(user: User): Response<User> = wrapRetrofitExceptions{
+    override suspend fun registration(user: User): Response<User> = wrapRetrofitExceptions{
         delay(1000)
-        userApi.addUser(user)
+        userApi.registration(user)
     }
+
 }

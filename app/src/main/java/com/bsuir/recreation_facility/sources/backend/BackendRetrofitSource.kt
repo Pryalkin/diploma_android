@@ -30,7 +30,6 @@ open class BackendRetrofitSource(
             throw ParseBackendResponseException(e)
             // retrofit
         } catch (e: HttpException) {
-            throw Exception(e)
             throw createBackendException(e)
             // mostly retrofit
         } catch (e: IOException) {

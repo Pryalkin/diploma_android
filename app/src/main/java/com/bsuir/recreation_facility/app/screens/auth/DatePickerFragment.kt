@@ -1,4 +1,4 @@
-package com.bsuir.recreation_facility.app.screens
+package com.bsuir.recreation_facility.app.screens.auth
 
 import android.app.DatePickerDialog
 import android.app.Dialog

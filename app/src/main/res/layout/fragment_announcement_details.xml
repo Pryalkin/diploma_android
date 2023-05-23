@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pavel Pryalkin Pavlovich" />
+
+    <TextView
+        android:id="@+id/tvCreateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="23:12:23 23.12.2022" />
+
+    <TextView
+        android:id="@+id/tvAd"
+        android:background="@drawable/dotted_border"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreateDate"
+        app:layout_constraintStart_toStartOf="@+id/tvAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthor" />
+
+    <TextView
+        android:id="@+id/tvLaugh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAd"
+        app:layout_constraintTop_toBottomOf="@+id/tvAd"
+        tools:text="Смех: 999" />
+
+    <TextView
+        android:id="@+id/tvGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvLaugh"
+        app:layout_constraintTop_toBottomOf="@+id/tvAd"
+        tools:text="Добро: 999"/>
+
+    <TextView
+        android:id="@+id/tvSurprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tvGood"
+        app:layout_constraintTop_toBottomOf="@+id/tvAd"
+        tools:text="Удивление: 999" />
+
+    <TextView
+        android:id="@+id/tvSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvLaugh"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaugh"
+        tools:text="Грусть: 999" />
+
+    <TextView
+        android:id="@+id/tvAnger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvSad"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaugh"
+        tools:text="Злость: 999" />
+
+    <TextView
+        android:id="@+id/tvFear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvAnger"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaugh"
+        tools:text="Страх: 999" />
+
+    <TextView
+        android:id="@+id/tvDisgust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvFear"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaugh"
+        tools:text="Отвращение: 999" />
+
+    <TextView
+        android:id="@+id/tvSee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvSurprise"
+        app:layout_constraintTop_toBottomOf="@+id/tvAd"
+        tools:text="Просмотров: 999" />
+
+    <Button
+        android:id="@+id/btEmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/emotions"
+        app:layout_constraintStart_toStartOf="@+id/tvSad"
+        app:layout_constraintTop_toBottomOf="@+id/tvSad" />
+
+    <EditText
+        android:id="@+id/etFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Поиск"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/btEmo"
+        app:layout_constraintTop_toBottomOf="@+id/btEmo" />
+
+    <Button
+        android:id="@+id/btFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter"
+        app:layout_constraintEnd_toEndOf="@+id/tvAd"
+        app:layout_constraintStart_toEndOf="@+id/etFind"
+        app:layout_constraintTop_toBottomOf="@+id/btEmo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

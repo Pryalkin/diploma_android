@@ -1,15 +1,14 @@
-package com.bsuir.recreation_facility.app.screens
+package com.bsuir.recreation_facility.app.screens.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import com.bsuir.recreation_facility.app.model.Employee
 import com.bsuir.recreation_facility.app.model.User
-import com.bsuir.recreation_facility.app.views.LoginViewModel
+import com.bsuir.recreation_facility.app.views.auth.LoginViewModel
 import com.bsuir.recreation_facility.databinding.FragmentLoginBinding
 import java.util.*
 
@@ -28,15 +27,15 @@ class LoginFragment : Fragment() {
                 val user = User(
                     0L, "", "", "",
                     Date(), "", "", edLogin.text.toString(), edPassword.text.toString(),
-                    Date(), Date(), false, isNotLocked = false, isActive = false,
+                    Date(), Date(), false, isNotLocked = false, isActive = false
                 )
-                val employee = Employee(0L, user, "", "", emptyArray(), 0.0)
+                val employee = Employee(0L, user, null, null, null, null, null, null)
                 viewModel.login(employee)
-                Toast.makeText(context, viewModel.message.value, Toast.LENGTH_SHORT).show()
-//                startActivity(Intent(activity, ApplicationActivity::class.java))
             }
+            viewModel.register(context, activity, binding)
             return binding.root
         }
 
     }
+
 }

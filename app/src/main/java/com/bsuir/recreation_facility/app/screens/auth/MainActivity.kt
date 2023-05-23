@@ -1,4 +1,4 @@
-package com.bsuir.recreation_facility.app.screens
+package com.bsuir.recreation_facility.app.screens.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

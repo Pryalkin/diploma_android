@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Имя: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Фамилия: "
+        app:layout_constraintEnd_toEndOf="@+id/tName"
+        app:layout_constraintStart_toStartOf="@+id/tName"
+        app:layout_constraintTop_toBottomOf="@+id/tName" />
+
+    <TextView
+        android:id="@+id/tPatronymic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Отчество: "
+        app:layout_constraintEnd_toEndOf="@+id/tSurname"
+        app:layout_constraintStart_toStartOf="@+id/tSurname"
+        app:layout_constraintTop_toBottomOf="@+id/tSurname" />
+
+    <TextView
+        android:id="@+id/tDateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Дата рождения: "
+        app:layout_constraintEnd_toEndOf="@+id/tPatronymic"
+        app:layout_constraintStart_toStartOf="@+id/tPatronymic"
+        app:layout_constraintTop_toBottomOf="@+id/tPatronymic" />
+
+    <TextView
+        android:id="@+id/tJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Должность: "
+        app:layout_constraintEnd_toEndOf="@+id/tDateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/tDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/tDateOfBirth" />
+
+    <TextView
+        android:id="@+id/tRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Роль: "
+        app:layout_constraintEnd_toEndOf="@+id/tJobTitle"
+        app:layout_constraintStart_toStartOf="@+id/tJobTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tJobTitle"
+        />
+
+    <TextView
+        android:id="@+id/tUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Логин: "
+        app:layout_constraintEnd_toEndOf="@+id/tRole"
+        app:layout_constraintStart_toStartOf="@+id/tRole"
+        app:layout_constraintTop_toBottomOf="@+id/tRole"
+        />
+
+    <TextView
+        android:id="@+id/tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="16"
+        android:textColor="@color/black"
+        android:hint="Email: "
+        app:layout_constraintEnd_toEndOf="@+id/tUsername"
+        app:layout_constraintStart_toStartOf="@+id/tUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tUsername" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

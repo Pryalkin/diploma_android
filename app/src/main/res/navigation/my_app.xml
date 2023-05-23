@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_app"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.home.HomeFragment"
+        android:label="База отдыха"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_cabinetFragment"
+            app:destination="@id/cabinetFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_logoutFragment"
+            app:destination="@id/logoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cabinetFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.cabinet.CabinetFragment"
+        android:label="Кабинет"
+        tools:layout="@layout/fragment_cabinet" >
+        <action
+            android:id="@+id/action_cabinetFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.department.GroupFragment"
+        android:label="Группа"
+        tools:layout="@layout/fragment_group" >
+        <action
+            android:id="@+id/action_groupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.LogoutFragment"
+        android:label="Выход"
+        tools:layout="@layout/fragment_logout" >
+        <action
+            android:id="@+id/action_logoutFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.cabinet.UserDetailsFragment"
+        android:label="UserDetailsFragment" />
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.cabinet.EmployeeDetailsFragment"
+        android:label="EmployeeDetailsFragment" />
+    <fragment
+        android:id="@+id/announcementDetailsFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.department.AnnouncementDetailsFragment"
+        android:label="AnnouncementDetailsFragment" />
+    <fragment
+        android:id="@+id/empDetailsFragment"
+        android:name="com.bsuir.recreation_facility.app.screens.app.department.EmpDetailsFragment"
+        android:label="EmpDetailsFragment" />
+</navigation>
